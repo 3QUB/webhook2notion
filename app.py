@@ -36,9 +36,9 @@ def createReceipt(token, collectionURL, product, content, url, date):
     client = NotionClient(token)
     cv = client.get_collection_view(collectionURL)
     row = cv.collection.add_row()
-    row.product = product
-    row.content = content
-    row.url = url
+    row.name = product
+    row.contenuemail = content
+    row.urlemail = url
     row.date = date
 
 
